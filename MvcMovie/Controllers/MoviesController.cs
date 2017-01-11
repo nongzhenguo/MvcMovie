@@ -37,9 +37,9 @@ namespace MvcMovie.Controllers
             if (!String.IsNullOrEmpty(searchString))
 
             {
-
+                //查询
                 movies = movies.Where(s => s.Title.Contains(searchString));
-
+                
             }
 
             if (!string.IsNullOrEmpty(movieGenre))
